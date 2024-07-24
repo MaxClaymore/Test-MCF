@@ -1,5 +1,11 @@
 --Jawaban Soal Test Query
 
+--1 
+--Primary Key :  NoKontrak dari TablePembayaran, KodeCabang dari TableCabang & KodeMotor dari TableMotor.
+---Penjelasan : Karena kolom tersebut harus bersifat unik dan tidak boleh sama dengan yang lain.
+--Foreign Key : KodeCabang & KodeMotor dari TablePembayaran
+---Penjelasan : Untuk mereferensikan antar kolom dari TableCabang & TableMotor
+
 --2
 SELECT * FROM Tabel_Pembayaran
 WHERE CONVERT(DATE, TglBayar) = '2014-10-20';
